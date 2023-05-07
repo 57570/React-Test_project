@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Details from "./Details";
+
 import { Toast } from "bootstrap";
 import toast, { Toaster } from 'react-hot-toast';
 const Home = () => {
