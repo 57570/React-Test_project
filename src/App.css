@@ -10,6 +10,17 @@
     justify-content: space-around;
 }
 
+.mainBox
+{
+    margin-top: 20px;
+}
+
+/* .card
+{
+    margin-left: 20px;
+    margin-top: 20px;
+} */
+
 .detailsCard
 {
     display: flex;
@@ -43,5 +54,27 @@
 
 .backBtn
 {
-    margin:10px;
+    margin:20px;
 }
+
+@media screen and (max-width: 830px) {
+    .detailsCard {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .box
+    {
+        margin-top: 20px;
+    }
+
+    .card
+    {
+        margin-left: 20px;
+    }
+
+    .backBtn
+    {
+        margin-left: 20px;
+    }
+  }

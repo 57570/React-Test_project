@@ -156,9 +156,10 @@ const Home = () => {
 
     </div> 
     :
+    <div className="mainBox">
       <div className="row cards col-sm-12">
       {shows?.map((s) => (
-        <div className="card" style={{ width: "18rem" }} key={s.show.id}>
+        <div className="card mt-3" style={{ width: "18rem" }} key={s.show.id}>
           <img key={s.show.id} src={s.show.image?.medium} alt={s.show.name} />
           <div className="card-body">
             <h5 className="card-title">{s.show.name}</h5>
@@ -169,8 +170,9 @@ const Home = () => {
                 More Details
             </button>
           </div>
-        </div>
+          </div>
       ))}
+      </div>
       </div>
 }
         {/* {selected && isSelected && <Details />} */}
